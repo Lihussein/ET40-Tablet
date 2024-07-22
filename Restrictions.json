@@ -1,0 +1,49 @@
+{
+    "General": {
+        "Name": "wowtest_A11_ET40 Restrictions",
+        "Platform": "Android",
+        "Model": "Zebra ET40",
+		"SelectOEM": "Zebra",
+		"OEMSettings": "Enable",
+		"ProfileScope": "Production",
+		"AllowRemoval": "Always",
+		"ManagedBy": "Woolworths"
+        "Description": "Profile for ET40 device with specific restrictions.",
+        "AssignmentType": "Optional"  // Or 'Automatic' for mandatory assignment
+    },
+    "PayloadContent": {
+        "Restrictions": {
+			"DeviceFunctionality": {
+				"AllowScreenCapture": true,
+				"AllowStatusBar": true,
+				"AllowSystemUI": true,
+			}
+			"Application":{
+				"AllowCamera": true,
+				"AllowGooglePlay": true,
+				"AllowAccountInGooglePlay": true,
+				"AllowChromeBrowser": true,
+				"AllowNonMarketAppInstallation": true,
+				"AllowModifyingApplicationsInSettings": true,
+				"AllowInstallingApplication": true,
+				"AllowUninstallingApplication": true,
+				"AllowDisablingApplicationVerification": true,
+				"SkipUserTutorialAndIntroductoryHints": true,
+			}
+			"SyncAndStorage": {
+				"AllowUSBDebugging": true,
+				"AllowMountingPhysicalStorageMedia": true,
+				"AllowUSBFileTransfer": true,
+			}
+			"Network": {
+				"AllowWifiChanges": true,
+				"AllowBluetoothChanges": true,
+				"AllowBluetooth": true,
+				"AllowAndroidBeam": true,
+				"AllowManagedWifiProfileChanges": true,
+				
+			
+			
+        }
+    }
+}
