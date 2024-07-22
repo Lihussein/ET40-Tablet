@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://www.air-watch.com/profile/1.2">
+    <General>
+        <Name>wowtest_A11_ET40 Restrictions</Name>
+        <Platform>Android</Platform>
+        <Model>Zebra ET40</Model>
+        <SelectOEM>Zebra</SelectOEM>
+        <OEMSettings>Enable</OEMSettings>
+        <ProfileScope>Production</ProfileScope>
+        <AllowRemoval>Always</AllowRemoval>
+        <ManagedBy>Woolworths</ManagedBy>
+        <Description>Profile for ET40 device with specific restrictions.</Description>
+        <AssignmentType>Optional</AssignmentType> </General>
+
+    <PayloadContent>
+        <Restrictions>
+            <DeviceFunctionality>
+                <AllowScreenCapture>true</AllowScreenCapture>
+                <AllowStatusBar>true</AllowStatusBar>
+                <AllowSystemUI>true</AllowSystemUI>
+            </DeviceFunctionality>
+            <Application>
+                <AllowCamera>true</AllowCamera>
+                <AllowGooglePlay>true</AllowGooglePlay>
+                <AllowAccountInGooglePlay>true</AllowAccountInGooglePlay>
+                <AllowChromeBrowser>true</AllowChromeBrowser>
+                <AllowNonMarketAppInstallation>true</AllowNonMarketAppInstallation>
+                <AllowModifyingApplicationsInSettings>true</AllowModifyingApplicationsInSettings>
+                <AllowInstallingApplication>true</AllowInstallingApplication>
+                <AllowUninstallingApplication>true</AllowUninstallingApplication>
+                <AllowDisablingApplicationVerification>true</AllowDisablingApplicationVerification>
+                <SkipUserTutorialAndIntroductoryHints>true</SkipUserTutorialAndIntroductoryHints>
+            </Application>
+            <SyncAndStorage>
+                <AllowUSBDebugging>true</AllowUSBDebugging>
+                <AllowMountingPhysicalStorageMedia>true</AllowMountingPhysicalStorageMedia>
+                <AllowUSBFileTransfer>true</AllowUSBFileTransfer>
+            </SyncAndStorage>
+            <Network>
+                <AllowWifiChanges>true</AllowWifiChanges>
+                <AllowBluetoothChanges>true</AllowBluetoothChanges>
+                <AllowBluetooth>true</AllowBluetooth>
+                <AllowAndroidBeam>true</AllowAndroidBeam>
+                <AllowManagedWifiProfileChanges>true</AllowManagedWifiProfileChanges>
+            </Network>
+        </Restrictions>
+    </PayloadContent>
+</Profile>
